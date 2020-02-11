@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="app.js"></script>
+    <meta charset="utf-8">
+    <title>DnD Character Creater</title>
+</head>
+<body>
+    <h1>Welcome to your Dungeons and Dragons Character Creator!</h1>
+    <!-- GUIDE -->
+    <button class="guide-buttons" id="openGuide">Are you new?</button>
+    <div id="guide">
+        <div id="guide-text">
+            <h2>Guide</h2>
+            <p>This website is fairly simple but it is a great way to start planning your next character!There are 3 different sections: Race, Class, and Ability Scores. Each one determines a specific aspect of your character. Click the arrows to cycle through the different options, then click the "Select" button to see their specific details. When it comes to Ability Scores hit the "Randomize" button then drag and drop them where you would like.</p>
+            <p><b>Race:</b> With a diverse world and a large mixture of creatures determining a race is a key aspect to the creation of your character. This is the main determinant of what your character will look and sound like. Each one offers a bonus to certain ability scores as well as a mixture of extra abilities.</p>
+            <p><b>Class:</b> This can be seen as your characters profession and the determinant of how they will approach certain situations. They range from complex spell casters to aggressive fighters, each one coming with their own set of moves and abilities.</p>
+            <p><b>Ability Scores:</b> These are your characters stats, each one pertaining to a different aspect of your characters capabilities. Strength(Str) is your characters physical power. Dexterity(Dex) is your agility. Constitution(Con) is a measurement of endurance. Intelligence(Int) is your reasoning and memory. Wisdom(Wis) determines stuff like common sense and perception. Charisma(Cha) is your characters social aptitude. Determining Ability Score is a random system where you roll 4, 6-sided die and take the 3 highest. It is recommended that you allocate your Ability Scores based on the needs of your class.</p>
+            <div id="guide-footer">
+                <a class="guide-buttons" id="close" href="#">Proceed to Character Creation!</a>
+            </div>
+        </div>
+    </div>
+
+<div class="main-content">
+    <!-- RACES -->
+        <!-- =========== race CONTAINER ======== -->
+        <div class="race-container">
+            <!-- previous button -->
+            <div class="race-button">
+                <button id="previous-race">↑</button>
+            </div>
+            <!-- images -->
+            <div class="race-images">
+                <img src="images/Races/Dragonborn.png" alt="dragonborn" id='dragonborn'>
+
+                <img src="images/Races/Dwarf.png" alt="dwarf">
+
+                <img src="images/Races/Elf.png" alt="elf">
+
+                <img src="images/Races/Gnome.png" alt="gnome">
+
+                <img src="images/Races/half-elf.png" alt="half-elf">
+
+                <img src="images/Races/half-orc.png" alt="half-orc">
+
+                <img src="images/Races/halfling.png" alt="halfling">
+
+                <img src="images/Races/Human.png" alt="human">
+
+                <img src="images/Races/Tiefling.png" alt="tiefling">
+
+            </div>
+            <!-- next button -->
+            <div class="race-button">
+                <!-- from linearicons icon font -->
+                <button id='next-race'>↓</button>
+            </div>
+
+            <div class="flip">
+                <button id="select-race">Select</select>
+            </div>
+        </div>
+
+<!-- CLASSES -->
+    <!-- =========== Class Container ======== -->
+    <div class="classes-container">
+        <!-- previous button -->
+        <div class="class-button">
+            <button id="previous-class">↑</button>
+        </div>
+        <!-- images -->
+        <div class="class-images">
+            <img src="images/Classes/Barbarian.png" alt="barbarian">
+
+            <img src="images/Classes/Bard.png" alt="bard">
+
+            <img src="images/Classes/Cleric.png" alt="cleric">
+
+            <img src="images/Classes/Druid.png" alt="druid">
+
+            <img src="images/Classes/Fighter.png" alt="fighter">
+
+            <img src="images/Classes/Monk.png" alt="monk">
+
+            <img src="images/Classes/Paladin.png" alt="paladin">
+
+            <img src="images/Classes/Ranger.png" alt="ranger">
+
+            <img src="images/Classes/Rogue.png" alt="rogue">
+
+            <img src="images/Classes/Sorcerer.png" alt="sorcerer">
+
+            <img src="images/Classes/Warlock.png" alt="warlock">
+
+            <img src="images/Classes/Wizard.png" alt="wizard">
+
+        </div>
+        <!-- next button -->
+        <div class="class-button next-class">
+            <button id="next-class">↓</button>
+        </div>
+    </div>
+
+<!-- ABILITIES -->
+    <!-- =========== Ability Score Container ======== -->
+    <div class="ability-scores">
+        <ul>
+            <li id="str">Strength<b>(Str)</b>: </li>
+            <li id="dex">Dexterity<b>(Dex)</b>: </li>
+            <li id="con">Constitution<b>(Con)</b>: </li>
+            <li id="int">Intelligence<b>(Int)</b>: </li>
+            <li id="wis">Wisdom<b>(Wis)</b>: </li>
+            <li id="cha">Charisma<b>(Cha)</b>: </li>
+        </ul>
+        <button id="stat-roll">Generate</button>
+    </div>
+</div>
+</div>
+</body>
+</html>
