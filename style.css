@@ -3,8 +3,19 @@
 } */
 
 h1 {
+    margin-top: .25%;
     display: flex;
     justify-content: center;
+}
+
+h2 {
+    margin-left: 48vw;
+    margin-right: 50vw;
+}
+
+p {
+    margin-left: 5vw;
+    margin-right: 5vw;
 }
 
 #guide {
@@ -17,7 +28,7 @@ h1 {
 	z-index: 1;
 	overflow: auto;
 	display: none;
-    background-image: url("https://cdn.shopify.com/s/files/1/0997/9924/products/image1_6_1024x1024.JPG?v=1476651583")
+    background-image: url("https://cdn.shopify.com/s/files/1/0997/9924/products/image1_6_1024x1024.JPG?v=1476651583");
 }
 
 .guide-buttons {
@@ -29,23 +40,16 @@ h1 {
 	color: white;
 	font-family: 'Arial';
 	cursor: pointer;
-    margin: 1% auto 2% auto;
-}
-
-#guide-textbox{
-	background-color: white;
-	height: 350px;
-	width: 550px;
-	/* border-radius: 2px; */
-	margin: 150px auto;
-	/* box-shadow: 0 2px 2px rgba(0,0,0,0.2); */
-	padding: 10%;
-	line-height: 120%;
-	font-family: Arial;
+    /* margin: 1% auto 2% auto; */
+    margin-left: 45%;
+    margin-right: 44%;
 }
 
 #guide-footer {
-	text-align: right;
+	/* text-align: right; */
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-top: 2%;
 }
 
 body {
@@ -59,26 +63,38 @@ body {
 
 .main-content {
     display: flex;
+    margin-top: .5%;
 }
 
-.container {
+/* .container {
     width: 35%;
-}
+} */
 
 .flip {
     align: center;
+    margin-left: 45%;
+    margin-right: 50%;
 }
 
 /* RACES */
 
+.race-container {
+    display: inline-block;
+    width: 35vw;
+    height: 80.75vh;
+}
+
 .race-images {
-  width: 100%;
-  padding: 10px;
-  box-sizing: border-box;
+  width: 80%;
+  padding: 0px;
+  height: 70%;
+  /* box-sizing: border-box ; */
   margin-left: auto;
   margin-right: auto;
   display: block;
+  margin-bottom: 11vh;
 }
+
 .race-images img {
   width: 75%;
   /* border-radius: 10px; */
@@ -115,16 +131,19 @@ body {
 }
 
 /* CLASSES */
+
 .class-images {
-  width: 50%;
-  padding: 10px;
+  width: 60%;
+  padding: 0px;
+  height: 50%;
   box-sizing: border-box;
   margin-left: auto;
   margin-right: auto;
   display: block;
+  margin-bottom: 27.5vh;
 }
 .class-images img {
-  width: 75%;
+  width: 60%;
   /* border-radius: 10px; */
   display: none;
   margin-left: auto;
@@ -148,7 +167,9 @@ body {
 }
 
 .classes-container {
-    width: 35%;
+    display: inline-block;
+    width: 35vw;
+    height: 80vh;
 }
 
 /* ABILITY SCORES */
@@ -162,11 +183,11 @@ li {
 }
 
 #stat-roll {
-    padding: 5%;
-    margin-left: auto;
-    margin-right: auto;
+    padding: 5px 10px;
+    margin-left: 45%;
+    margin-right: 45%;
 }
 
 .ability-scores {
-    width: 35%;
+    width: 35vw;
 }
