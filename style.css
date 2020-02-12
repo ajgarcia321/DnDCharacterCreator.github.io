@@ -29,6 +29,7 @@ p {
 	overflow: auto;
 	display: none;
     background-image: url("https://cdn.shopify.com/s/files/1/0997/9924/products/image1_6_1024x1024.JPG?v=1476651583");
+    background-size: cover;
 }
 
 .guide-buttons {
@@ -54,6 +55,7 @@ p {
 
 body {
     background-image: url("https://cdn.shopify.com/s/files/1/0997/9924/products/image1_6_1024x1024.JPG?v=1476651583");
+    background-size: cover;
 }
     /* background-repeat: no-repeat;
     height: 100%;
@@ -191,3 +193,6 @@ li {
 .ability-scores {
     width: 35vw;
 }
+
+/* MOBILE */
+/* @media (max-width 640px); */
