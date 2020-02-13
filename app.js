@@ -145,10 +145,10 @@ $( () => {
                 $raceInfo.append(`<h4>${data.name}</h4>`)
                 $raceInfo.append(`<p><b>Speed: </b>${data.speed}</p>`)
                 $raceInfo.append(`<p><b>${data.ability_bonuses[0].name}:</b> +${data.ability_bonuses[0].bonus}</p>`)
-                $raceInfo.append(`<p>${data.alignment}</p>`)
-                $raceInfo.append(`<p>${data.age}</p>`)
-                $raceInfo.append(`<p>${data.size_description}</p>`)
-                $raceInfo.append(`<p>${data.language_desc}</p>`)
+                $raceInfo.append(`<p><b>Alignment: </b>${data.alignment}</p>`)
+                $raceInfo.append(`<p><b>Age: </b>${data.age}</p>`)
+                $raceInfo.append(`<p><b>Size: </b>${data.size_description}</p>`)
+                $raceInfo.append(`<p><b>Language: </b>${data.language_desc}</p>`)
             },
             error: ()=>{
                 console.log('bad request');
