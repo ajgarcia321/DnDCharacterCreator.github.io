@@ -144,7 +144,7 @@ $( () => {
                 $raceInfo.children().remove()
                 $raceInfo.append(`<h4>${data.name}</h4>`)
                 $raceInfo.append(`<p><b>Speed: </b>${data.speed}</p>`)
-                $raceInfo.append(`<p><b>${data.ability_bonuses[0].name}:</b> ${data.ability_bonuses[0].bonus}`)
+                $raceInfo.append(`<p><b>${data.ability_bonuses[0].name}:</b> +${data.ability_bonuses[0].bonus}</p>`)
                 $raceInfo.append(`<p>${data.alignment}</p>`)
                 $raceInfo.append(`<p>${data.age}</p>`)
                 $raceInfo.append(`<p>${data.size_description}</p>`)
