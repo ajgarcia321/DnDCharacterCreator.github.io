@@ -46,20 +46,7 @@ $( () => {
 
         $('.race-images').children().eq(currentRaceIndex).css('display', 'block');
     })
-
-    $('#select-race').on('click', () => {
-        $.ajax({
-            url: 'https://www.dnd5eapi.co/api/races/'+ racesArray[currentRaceIndex],
-            success: (data)=>{
-                console.log(currentRaceIndex);
-                console.log(data);
-            },
-            error: ()=>{
-                console.log('bad request');
-            }
-        })
-    });
-
+    
     /////////////////////////////////////
     // Class
     /////////////////////////////////////
@@ -90,19 +77,6 @@ $( () => {
         }
 
         $('.class-images').children().eq(currentClassIndex).css('display', 'block');
-    })
-
-    $('#select-class').on('click', () => {
-        $.ajax({
-            url: 'https://www.dnd5eapi.co/api/classes/'+ classesArray[currentClassIndex],
-            success: (data)=>{
-                $(".class-images").hide();
-                $(".class-info").css('display', 'block');
-            },
-            error: ()=>{
-                console.log('bad request');
-            }
-        })
     })
 
     /////////////////////////////////////
