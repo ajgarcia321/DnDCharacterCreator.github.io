@@ -112,16 +112,22 @@ $( () => {
     let rolls = []
     $('#stat-roll').on('click', () => {
         rolls = []
+        $("#str").children().remove()
+        $("#dex").children().remove()
+        $("#con").children().remove()
+        $("#int").children().remove()
+        $("#wis").children().remove()
+        $("#cha").children().remove()
         for (let i = 1; i <= 6; i++) {
             let statRoll = Math.floor(Math.random() * 16) + 3
             rolls.push(statRoll)
         }
-        $("#str").append(rolls[0])
-        $("#dex").append(rolls[1])
-        $("#con").append(rolls[2])
-        $("#int").append(rolls[3])
-        $("#wis").append(rolls[4])
-        $("#cha").append(rolls[5])
+        $("#str").append(`<p>${rolls[0]}</p>`)
+        $("#dex").append(`<p>${rolls[1]}</p>`)
+        $("#con").append(`<p>${rolls[2]}</p>`)
+        $("#int").append(`<p>${rolls[3]}</p>`)
+        $("#wis").append(`<p>${rolls[4]}</p>`)
+        $("#cha").append(`<p>${rolls[5]}</p>`)
     })
     /////////////////////////////////////
     // Display Info (Race)

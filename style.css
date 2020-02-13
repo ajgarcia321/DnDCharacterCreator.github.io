@@ -116,7 +116,7 @@ width: 100%;
     background-color: white;
     position: fixed;
     top: 5vh;
-    left: 60vh;
+    left: 45vh;
     height: 90vh;
     width: 40vw;
     z-index: 1;
@@ -183,7 +183,7 @@ width: 100%;
     background-color: white;
     position: fixed;
     top: 5vh;
-    left: 60vh;
+    left: 45vh;
     height: 90vh;
     width: 40vw;
     z-index: 1;
@@ -226,10 +226,11 @@ width: 100%;
 
 ul {
     font-size: 25px;
-    line-height: 3em;
+    line-height: 20px;
 }
 li {
     list-style-type: none;
+    line-height: 20px;
 }
 
 #stat-roll {
@@ -240,6 +241,7 @@ li {
 
 .ability-scores {
     width: 35vw;
+    height: 40vw;
 }
 
 /* MOBILE */
