@@ -46,7 +46,7 @@ $( () => {
 
         $('.race-images').children().eq(currentRaceIndex).css('display', 'block');
     })
-    
+
     /////////////////////////////////////
     // Class
     /////////////////////////////////////
@@ -118,11 +118,19 @@ $( () => {
                 $raceInfo.children().remove()
                 $raceInfo.append(`<h4>${data.name}</h4>`)
                 $raceInfo.append(`<p><b>Speed: </b>${data.speed}</p>`)
-                $raceInfo.append(`<p><b>${data.ability_bonuses[0].name}:</b> +${data.ability_bonuses[0].bonus}</p>`)
+                for (let a = 0; a < data.ability_bonuses.length; a++) {
+                    $raceInfo.append(`<p><b>${data.ability_bonuses[a].name}:</b> +${data.ability_bonuses[a].bonus}</p>`)
+                }
+                for (let b = 0; b < data.traits.length; b++) {
+                    $raceInfo.append(`<p><b>Trait: </b>${data.traits[b].name}</p>`)
+                }
                 $raceInfo.append(`<p><b>Alignment: </b>${data.alignment}</p>`)
                 $raceInfo.append(`<p><b>Age: </b>${data.age}</p>`)
                 $raceInfo.append(`<p><b>Size: </b>${data.size_description}</p>`)
                 $raceInfo.append(`<p><b>Language: </b>${data.language_desc}</p>`)
+                for (let c = 0; c < data.subraces.length; c++) {
+                    $raceInfo.append(`<p><b>Subraces: </b>${data.subraces[c].name}</p>`)
+                }
             },
             error: ()=>{
                 console.log('bad request');
@@ -154,6 +162,9 @@ $( () => {
                 $classInfo.children().remove()
                 $classInfo.append(`<h4>${data.name}</h4>`)
                 $classInfo.append(`<p><b>Hit Die: </b>d${data.hit_die}</p>`)
+                for (let i = 0; i <= data.proficiency_choices[0].from.length; i++) {
+                    $classInfo.append(`<p>${data.proficiency_choices[0].from[i].name}</p>`)
+                }
             },
             error: ()=>{
                 console.log('bad request');
