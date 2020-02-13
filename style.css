@@ -19,35 +19,34 @@ p {
 }
 
 #guide {
-	background-color: white;
-	position: fixed;
-	top: 0;
-	left: 0;
-	height: 100%;
-	width: 100%;
-	z-index: 1;
-	overflow: auto;
-	display: none;
+    background-color: white;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 1;
+    overflow: auto;
+    display: none;
     background-image: url("https://cdn.shopify.com/s/files/1/0997/9924/products/image1_6_1024x1024.JPG?v=1476651583");
     background-size: cover;
 }
 
 .guide-buttons {
-	padding: 14px 18px;
-	background-color: #677996;
-	border: none;
-	outline: none;
-	border-radius: 3px;
-	color: white;
-	font-family: 'Arial';
-	cursor: pointer;
+    padding: 14px 18px;
+    background-color: black;
+    border: none;
+    outline: none;
+    border-radius: 3px;
+    color: white;
+    cursor: pointer;
     /* margin: 1% auto 2% auto; */
     margin-left: 45%;
     margin-right: 44%;
 }
 
 #guide-footer {
-	/* text-align: right; */
+    /* text-align: right; */
     margin-left: 20%;
     margin-right: 20%;
     margin-top: 2%;
@@ -57,25 +56,13 @@ body {
     background-image: url("https://cdn.shopify.com/s/files/1/0997/9924/products/image1_6_1024x1024.JPG?v=1476651583");
     background-size: cover;
 }
-    /* background-repeat: no-repeat;
-    height: 100%;
-    width: 100%;
-
-/* race */
-
+/* background-repeat: no-repeat;
+height: 100%;
+width: 100%;
+*/
 .main-content {
     display: flex;
     margin-top: .5%;
-}
-
-/* .container {
-    width: 35%;
-} */
-
-.flip {
-    align: center;
-    margin-left: 45%;
-    margin-right: 50%;
 }
 
 /* RACES */
@@ -87,81 +74,99 @@ body {
 }
 
 .race-images {
-  width: 80%;
-  padding: 0px;
-  height: 70%;
-  /* box-sizing: border-box ; */
-  margin-left: auto;
-  margin-right: auto;
-  display: block;
-  margin-bottom: 11vh;
+    width: 80%;
+    padding: 0px;
+    height: 70%;
+    /* box-sizing: border-box ; */
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    margin-bottom: 11vh;
 }
 
 .race-images img {
-  width: 75%;
-  /* border-radius: 10px; */
-  display: none;
-  margin-left: auto;
-  margin-right: auto;
+    width: 75%;
+    /* border-radius: 10px; */
+    display: none;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .race-images img:first-of-type {
     display: block;
 }
 
-.race-button {
-  align-self: center;
-  background: black;
-  padding: 5px 5px;
-  text-align: center;
-}
-
 #previous-race:hover {
-  cursor: pointer;
+    cursor: pointer;
 }
 
 
 #next-race:hover {
-  cursor: pointer;
+    cursor: pointer;
 }
 
 .previous-race {
-  position: absolute;
-  top: 50%;
-  left: 0;
-  transform: translateY(-50%);
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+}
+
+#race {
+    background-color: white;
+    position: fixed;
+    top: 5vh;
+    left: 60vh;
+    height: 90vh;
+    width: 40vw;
+    z-index: 1;
+    overflow: auto;
+    display: none;
+    background-size: cover;
+}
+
+.race-card {
+    padding: 2px 5px;
+    background-color: black;
+    border: none;
+    outline: none;
+    border-radius: 3px;
+    color: white;
+    cursor: pointer;
+    /* margin: 1% auto 2% auto; */
+    margin-left: 42%;
+    margin-right: 40%;
+}
+
+#race-footer {
+    /* text-align: right; */
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-top: 2%;
+}
+
+.race-button {
+    margin-left: 46.5%;
+    margin-right: 45%;
 }
 
 /* CLASSES */
 
 .class-images {
-  width: 60%;
-  padding: 0px;
-  height: 50%;
-  box-sizing: border-box;
-  margin-left: auto;
-  margin-right: auto;
-  display: block;
-  margin-bottom: 27.5vh;
+    width: 60%;
+    padding: 0px;
+    height: 50%;
+    box-sizing: border-box;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    margin-bottom: 27.5vh;
 }
 .class-images img {
-  width: 60%;
-  /* border-radius: 10px; */
-  display: none;
-  margin-left: auto;
-  margin-right: auto;
-}
-.class-button {
-  background: black;
-  padding: 5px 5px;
-  /* border-radius: %; */
-  text-align: center;
-}
-.class-button:hover {
-  cursor: pointer;
-  background: black;
-  /* box-shadow: 1px 1px #f2cd99; */
-  color: white;
+    width: 60%;
+    display: none;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .class-images img:first-of-type {
@@ -172,6 +177,49 @@ body {
     display: inline-block;
     width: 35vw;
     height: 80vh;
+}
+
+#class {
+    background-color: white;
+    position: fixed;
+    top: 5vh;
+    left: 60vh;
+    height: 90vh;
+    width: 40vw;
+    z-index: 1;
+    overflow: auto;
+    display: none;
+    background-size: cover;
+}
+
+.class-card {
+    padding: 2px 5px;
+    background-color: black;
+    border: none;
+    outline: none;
+    border-radius: 3px;
+    color: white;
+    cursor: pointer;
+    /* margin: 1% auto 2% auto; */
+    margin-left: 42%;
+    margin-right: 40%;
+}
+
+.class-button {
+    margin-left: 46.5%;
+    margin-right: 45%;
+}
+
+#class-footer {
+    /* text-align: right; */
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-top: 2%;
+}
+
+
+#next-race:hover {
+    cursor: pointer;
 }
 
 /* ABILITY SCORES */
@@ -195,4 +243,3 @@ li {
 }
 
 /* MOBILE */
-/* @media (max-width 640px); */

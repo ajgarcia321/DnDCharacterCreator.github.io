@@ -14,25 +14,36 @@
     <div id="guide">
         <div id="guide-text">
             <h2>Guide</h2>
-            <p>This website is fairly simple but it is a great way to start planning your next character!There are 3 different sections: Race, Class, and Ability Scores. Each one determines a specific aspect of your character. Click the arrows to cycle through the different options, then click the "Select" button to see their specific details then click the "Return" button to go back and view the images. When it comes to Ability Scores hit the "Randomize" button then drag and drop each score where you like.</p>
+            <p>This website is fairly simple but it is a great way to start planning your next character! There are 3 different sections: Race, Class, and Ability Scores. Each one determines a specific aspect of your character. Click the arrows to cycle through the different options, then click the "Select" button to see their specific details then click the "Return" button to go back and view the images. When it comes to Ability Scores hit the "Randomize" button then drag and drop each score where you like.</p>
             <p><b>Race:</b> With a diverse world and a large mixture of creatures determining a race is a key aspect to the creation of your character. This is the main determinant of what your character will look and sound like. Each one offers a bonus to certain ability scores as well as a mixture of extra features including size, speed, and special traits.</p>
             <p><b>Class:</b> This can be seen as your characters profession and the determinant of how they will approach certain situations. They range from complex spell casters to aggressive fighters, each one coming with their own set of moves and abilities. The best way to make full use of your class is to pair it with a race that gives the necessary bonuses as well as allocating your ability scores based on what your class needs.</p>
             <p><b>Ability Scores:</b> These are your characters stats, each one pertaining to a different aspect of your characters capabilities. Strength(Str) is your characters physical power. Dexterity(Dex) is your agility. Constitution(Con) is a measurement of endurance. Intelligence(Int) is your reasoning and memory. Wisdom(Wis) determines stuff like common sense and perception. Charisma(Cha) is your characters social aptitude. Determining Ability Score is a random system where you would typically roll 4, 6-sided die and take the 3 highest (don't worry, we did it for you!). Again, it is recommended that you allocate your Ability Scores based on the needs of your class to provide optimum efficiency.</p>
-            <p>Lastly, these are all recommendations so it is important to keep in mind the vast array of different races, classes, and ability scores available all throughout the internet. There is no set rule that dictates that you have to play a character a certain way, and that is one of the great things about Dungeons and Dragons, you can play whoever you want however you want! Just always make sure to check with your DM (Dungeon Master) before making any final decisions as they make have their own rules in place. Now go on and create your first character!</p> 
+            <p>Lastly, these are all recommendations so it is important to keep in mind the vast array of different races, classes, and ability scores available all throughout the internet as well as additional information that cannot be found on this website. There is no set rule that dictates that you have to play a character a certain way, and that is one of the great things about Dungeons and Dragons, you can play whoever you want however you want! Just always make sure to check with your DM (Dungeon Master) before making any final decisions as they make have their own rules in place. Now go on and create your first character!</p>
             <div id="guide-footer">
                 <a class="guide-buttons" id="close" href="#">Return</a>
             </div>
         </div>
     </div>
 
-<div class="main-content">
-    <!-- RACES -->
+    <div class="main-content">
+        <!-- RACES -->
         <!-- =========== race CONTAINER ======== -->
         <div class="race-container">
             <!-- previous button -->
             <div class="race-button">
                 <button id="previous-race">↑</button>
             </div>
+            <button class="race-card" id="openRace">Show More</button>
+            <div id="race">
+                <div id="race-text">
+                    <h3>Race: </h3>
+                    <p id="race-info"></p>
+                </div>
+                    <div id="race-footer">
+                        <a class="race-buttons" id="closeRace" href="#">Return</a>
+                    </div>
+            </div>
+
             <!-- images -->
             <div class="race-images">
                 <img src="./Images/Races/Dragonborn.png" alt="dragonborn" id='dragonborn'>
@@ -55,74 +66,74 @@
 
             </div>
 
-            <div class="flip">
-                <button id="select-race">Select</select>
-            </div>
             <!-- next button -->
             <div class="race-button">
-                <!-- from linearicons icon font -->
                 <button id='next-race'>↓</button>
             </div>
         </div>
 
-<!-- CLASSES -->
-    <!-- =========== Class Container ======== -->
-    <div class="classes-container">
-        <!-- previous button -->
-        <div class="class-button">
-            <button id="previous-class">↑</button>
+        <!-- CLASSES -->
+        <!-- =========== Class Container ======== -->
+        <div class="classes-container">
+            <!-- previous button -->
+            <div class="class-button">
+                <button id="previous-class">↑</button>
+            </div>
+            <button class="class-card" id="openClass">Show More</button>
+            <div id="class">
+                <div id="class-text">
+                    <h3>Class: </h3>
+                    <p id="class-info"></p>
+                </div>
+                    <div id="class-footer">
+                        <a class="class-buttons" id="closeClass" href="#">Return</a>
+                    </div>
+            </div>
+            <!-- images -->
+            <div class="class-images">
+                <img src="./Images/Classes/Barbarian.png" alt="barbarian">
+
+                <img src="./Images/Classes/Bard.png" alt="bard">
+
+                <img src="./Images/Classes/Cleric.png" alt="cleric">
+
+                <img src="./Images/Classes/Druid.png" alt="druid">
+
+                <img src="./Images/Classes/Fighter.png" alt="fighter">
+
+                <img src="./Images/Classes/Monk.png" alt="monk">
+
+                <img src="./Images/Classes/Paladin.png" alt="paladin">
+
+                <img src="./Images/Classes/Ranger.png" alt="ranger">
+
+                <img src="./Images/Classes/Rogue.png" alt="rogue">
+
+                <img src="./Images/Classes/Sorcerer.png" alt="sorcerer">
+
+                <img src="./Images/Classes/Warlock.png" alt="warlock">
+
+                <img src="./Images/Classes/Wizard.png" alt="wizard">
+            </div>
+
+            <div class="class-button next-class">
+                <button id="next-class">↓</button>
+            </div>
         </div>
-        <!-- images -->
-        <div class="class-images">
-            <img src="./Images/Classes/Barbarian.png" alt="barbarian">
 
-            <img src="./Images/Classes/Bard.png" alt="bard">
-
-            <img src="./Images/Classes/Cleric.png" alt="cleric">
-
-            <img src="./Images/Classes/Druid.png" alt="druid">
-
-            <img src="./Images/Classes/Fighter.png" alt="fighter">
-
-            <img src="./Images/Classes/Monk.png" alt="monk">
-
-            <img src="./Images/Classes/Paladin.png" alt="paladin">
-
-            <img src="./Images/Classes/Ranger.png" alt="ranger">
-
-            <img src="./Images/Classes/Rogue.png" alt="rogue">
-
-            <img src="./Images/Classes/Sorcerer.png" alt="sorcerer">
-
-            <img src="./Images/Classes/Warlock.png" alt="warlock">
-
-            <img src="./Images/Classes/Wizard.png" alt="wizard">
-
-        </div>
-
-        <div class="flip">
-            <button id="select-class">Select</select>
-        </div>
-        <!-- next button -->
-        <div class="class-button next-class">
-            <button id="next-class">↓</button>
+        <!-- =========== Ability Score Container ======== -->
+        <div class="ability-scores">
+            <ul>
+                <li id="str">Strength<b>(Str)</b>: </li>
+                <li id="dex">Dexterity<b>(Dex)</b>: </li>
+                <li id="con">Constitution<b>(Con)</b>: </li>
+                <li id="int">Intelligence<b>(Int)</b>: </li>
+                <li id="wis">Wisdom<b>(Wis)</b>: </li>
+                <li id="cha">Charisma<b>(Cha)</b>: </li>
+            </ul>
+            <button id="stat-roll">Generate</button>
         </div>
     </div>
-
-<!-- ABILITIES -->
-    <!-- =========== Ability Score Container ======== -->
-    <div class="ability-scores">
-        <ul>
-            <li id="str">Strength<b>(Str)</b>: </li>
-            <li id="dex">Dexterity<b>(Dex)</b>: </li>
-            <li id="con">Constitution<b>(Con)</b>: </li>
-            <li id="int">Intelligence<b>(Int)</b>: </li>
-            <li id="wis">Wisdom<b>(Wis)</b>: </li>
-            <li id="cha">Charisma<b>(Cha)</b>: </li>
-        </ul>
-        <button id="stat-roll">Generate</button>
-    </div>
-</div>
 </div>
 </body>
 </html>
